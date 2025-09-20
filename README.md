@@ -1,7 +1,11 @@
-# ArBi Freelance
-**Decentralized Freelancing Platform on Arbitrum**
+<div align="center">
 
-![ArBi Freelance Banner](https://via.placeholder.com/800x200/2563eb/ffffff?text=ArBi+Freelance)
+# ArBi Freelance
+### **Decentralized Freelancing Platform on Arbitrum**
+
+<img src="https://github.com/Gaganub/ArBi-Freelance-Arbitrium-Sepolia/blob/main/logo-ArBi.png" alt="ArBi Freelance Logo" width="400"/>
+
+</div>
 
 ## 🚀 Introduction
 
@@ -119,7 +123,7 @@ This project is built with:
 
 ## 🤝 Contributing
 
-We welcome contributions to ArBi Freelance! Please feel free to submit issues, feature requests, or pull requests to help improve the platform.
+You're welcome for any contributions to ArBi Freelance! Please feel free to submit issues, feature requests, or pull requests to help improve the platform.
 
 ## 📄 License
 
@@ -130,3 +134,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Built during the Arbitrum Hackathon, ArBi Freelance demonstrates the power of Layer 2 solutions in creating practical, user-friendly DeFi applications that solve real-world problems in the gig economy.
 
 ---
+
+**Ready to revolutionize freelancing? Join ArBi Freelance and experience the future of decentralized work.**

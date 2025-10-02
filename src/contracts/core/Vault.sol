@@ -110,13 +110,13 @@ contract Vault is ReentrancyGuard, IVault {
     mapping (address => uint256) public override reservedAmounts;
 
     // bufferAmounts allows specification of an amount to exclude from swaps
-    // this can be used to ensure a certain amount of liquidity is available for leverage positions
+    //This can be used to ensure a certain amount of liquidity is available for leverage positions
     mapping (address => uint256) public override bufferAmounts;
 
     // guaranteedUsd tracks the amount of USD that is "guaranteed" by opened leverage positions
-    // this value is used to calculate the redemption values for selling of USDG
-    // this is an estimated amount, it is possible for the actual guaranteed value to be lower
-    // in the case of sudden price decreases, the guaranteed value should be corrected
+    // this value is used to calculate the redemption values for the selling of USDG
+    //This is an estimated amount; the actual guaranteed value can be lower
+    //In the case of sudden price decreases, the guaranteed value should be corrected
     // after liquidations are carried out
     mapping (address => uint256) public override guaranteedUsd;
 

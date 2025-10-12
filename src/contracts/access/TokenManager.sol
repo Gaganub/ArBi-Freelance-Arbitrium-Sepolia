@@ -24,20 +24,13 @@ contract TokenManager is ReentrancyGuard {
     mapping (bytes32 => bool) public pendingActions;
     mapping (address => mapping (bytes32 => bool)) public signedActions;
 
-    event SignalApprove(address token, address spender, uint256 amount, bytes32 action, uint256 nonce);
-    event SignalApproveNFT(address token, address spender, uint256 tokenId, bytes32 action, uint256 nonce);
-    event SignalApproveNFTs(address token, address spender, uint256[] tokenIds, bytes32 action, uint256 nonce);
-    event SignalSetAdmin(address target, address admin, bytes32 action, uint256 nonce);
-    event SignalSetGov(address timelock, address target, address gov, bytes32 action, uint256 nonce);
-    event SignalPendingAction(bytes32 action, uint256 nonce);
-    event SignAction(bytes32 action, uint256 nonce);
-    event ClearAction(bytes32 action, uint256 nonce);
-
+    // Change 1: Moved constructor immediately after state variable declarations.
     constructor(uint256 _minAuthorizations) public {
         admin = msg.sender;
         minAuthorizations = _minAuthorizations;
     }
 
+    // Change 2: Moved modifiers immediately after the constructor, before events.
     modifier onlyAdmin() {
         require(msg.sender == admin, "TokenManager: forbidden");
         _;
@@ -48,7 +41,25 @@ contract TokenManager is ReentrancyGuard {
         _;
     }
 
-//Function Suspended -- add different
+    event SignalApprove(address token, address spender, uint256 amount, bytes32 action, uint256 nonce);
+    event SignalApproveNFT(address token, address spender, uint256 tokenId, bytes32 action, uint256 nonce);
+    event SignalApproveNFTs(address token, address spender, uint256[] tokenIds, bytes32 action, uint256 nonce);
+    event SignalSetAdmin(address target, address admin, bytes32 action, uint256 nonce);
+    event SignalSetGov(address timelock, address target, address gov, bytes32 action, uint256 nonce);
+    event SignalPendingAction(bytes32 action, uint256 nonce);
+    event SignAction(bytes32 action, uint256 nonce);
+    event ClearAction(bytes32 action, uint256 nonce);
+
+    function initialize(address[] memory _signers) public virtual onlyAdmin {
+        require(!isInitialized, "TokenManager: already initialized");
+        isInitialized = true;
+
+        signers = _signers;
+        for (uint256 i = 0; i < _signers.length; i++) {
+            address signer = _signers[i];
+            isSigner[signer] = true;
+        }
+    }
 
     function signersLength() public view returns (uint256) {
         return signers.length;

@@ -48,16 +48,7 @@ contract TokenManager is ReentrancyGuard {
         _;
     }
 
-    function initialize(address[] memory _signers) public virtual onlyAdmin {
-        require(!isInitialized, "TokenManager: already initialized");
-        isInitialized = true;
-
-        signers = _signers;
-        for (uint256 i = 0; i < _signers.length; i++) {
-            address signer = _signers[i];
-            isSigner[signer] = true;
-        }
-    }
+//Function Suspended -- add different
 
     function signersLength() public view returns (uint256) {
         return signers.length;

@@ -12,3 +12,5 @@ contract EsGMX is MintableBaseToken {
         return "esGMX";
     }
 }
+
+// Non-functional comment update 1

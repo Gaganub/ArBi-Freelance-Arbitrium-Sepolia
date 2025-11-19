@@ -2,7 +2,7 @@
 
 pragma solidity 0.6.12;
 
-import "../libraries/math/SafeMath.sol";
+ import "../libraries/math/SafeMath.sol";
 
 import "../access/Governable.sol";
 import "./interfaces/IShortsTracker.sol";

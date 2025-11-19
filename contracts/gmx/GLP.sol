@@ -12,3 +12,5 @@ contract GLP is MintableBaseToken {
         return "GLP";
     }
 }
+
+// Non-functional comment update 2

@@ -8,7 +8,7 @@
 </div>
 
 ## 🚀 Introduction
-
+ 
 ArBi Freelance is a revolutionary decentralized freelancing platform built on Arbitrum that transforms how freelancers and clients interact in the gig economy. Traditional freelancing platforms suffer from high fees, payment delays, and lack of transparency, often taking 10-20% commission while holding funds in escrow for weeks. Our solution leverages Arbitrum's fast and cost-effective infrastructure to create a trustless environment where smart contracts automatically handle payments, dispute resolution, and milestone tracking.
 
 The platform addresses critical pain points in the current freelancing ecosystem by implementing automated escrow systems, reputation-based smart contracts, and instant cryptocurrency payments. By utilizing Arbitrum's Layer 2 capabilities, ArBi Freelance eliminates the high transaction costs that plague other blockchain-based solutions, making micro-payments viable for small gigs and enabling a truly global, borderless freelancing economy.

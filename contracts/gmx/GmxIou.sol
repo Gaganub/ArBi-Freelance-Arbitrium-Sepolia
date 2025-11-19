@@ -2,7 +2,7 @@
 
 pragma solidity 0.6.12;
 
-import "../libraries/token/IERC20.sol";
+ import "../libraries/token/IERC20.sol";
 import "../libraries/math/SafeMath.sol";
 
 import "./interfaces/IGmxIou.sol";

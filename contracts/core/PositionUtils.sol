@@ -2,7 +2,7 @@
 
 pragma solidity ^0.6.0;
 
-import "../libraries/math/SafeMath.sol";
+ import "../libraries/math/SafeMath.sol";
 import "../peripherals/interfaces/ITimelock.sol";
 
 import "./interfaces/IVault.sol";

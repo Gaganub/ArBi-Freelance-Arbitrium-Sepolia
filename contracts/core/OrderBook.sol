@@ -2,7 +2,7 @@
 
 pragma solidity ^0.6.0;
 
-import "../libraries/math/SafeMath.sol";
+ import "../libraries/math/SafeMath.sol";
 import "../libraries/token/IERC20.sol";
 import "../tokens/interfaces/IWETH.sol";
 import "../libraries/token/SafeERC20.sol";

@@ -145,7 +145,7 @@ Referral contracts incentivize user growth and platform adoption by automaticall
 Why Use DeFi-style Smart Contracts?
 Our platform adopts proven decentralized finance (DeFi) architecture to:
 
-Guarantee security of funds
+Guarantee the security of funds
 
 Enable composable, modular business logic for escrow, jobs, payments, and incentives
 

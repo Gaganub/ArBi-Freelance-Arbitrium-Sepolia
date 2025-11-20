@@ -14,7 +14,13 @@ contract Governable {
         gov = msg.sender;
     }
 
-   
+    // ========= Modifiers =========
+
+    /// @notice Ensures that only the governance address is allowed
+    modifier onlyGov() {
+        require(msg.sender == gov, "Governable: forbidden");
+        _;
+    }
 
     // ========= Governance Functions =========
 

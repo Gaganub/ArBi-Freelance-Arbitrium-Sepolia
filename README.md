@@ -122,6 +122,35 @@ This project is built with:
 - [OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)
 - [Stylus Documentation](https://docs.arbitrum.io/stylus)
 
+### Additional Notes
+
+This repository’s smart contracts are the backbone of the ArBi-Freelance Escrow Platform. They provide the automation, security, and decentralization required to manage freelance jobs and payments trustlessly—without reliance on third-party escrow services.
+
+Key Relationships:
+Escrow Logic:
+Funds for freelance jobs are securely held in smart contracts until milestones or project completion. Payment release is automated upon job approval.
+
+Project & Milestone Management:
+Each freelance job and its milestones are represented and tracked on-chain, allowing for transparent workflow, automated releases, and dispute resolution through smart contracts.
+
+DeFi-inspired Modules:
+The platform leverages robust DeFi mechanisms (vaults, liquidity pools, token contracts, governance) for payment distribution, staking, rewards, and global value transfer.
+
+Governance & Security:
+Privileged actions, such as platform configuration, token whitelisting, and upgrades, are controlled by governance contracts, which protect users and enable decentralized management.
+
+Referral & Incentive Support:
+Referral contracts incentivize user growth and platform adoption by automatically tracking referrers and distributing rewards.
+
+Why Use DeFi-style Smart Contracts?
+Our platform adopts proven decentralized finance (DeFi) architecture to:
+
+Guarantee security of funds
+
+Enable composable, modular business logic for escrow, jobs, payments, and incentives
+
+Minimize risks, transaction friction, and costs associated with traditional platforms
+
 ## 🤝 Contributing
 
 You're welcome for any contributions to ArBi Freelance! Please feel free to submit issues, feature requests, or pull requests to help improve the platform.

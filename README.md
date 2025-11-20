@@ -142,14 +142,14 @@ Privileged actions, such as platform configuration, token whitelisting, and upgr
 Referral & Incentive Support:
 Referral contracts incentivize user growth and platform adoption by automatically tracking referrers and distributing rewards.
 
-Why Use DeFi-style Smart Contracts?
+- Why Use DeFi-style Smart Contracts?
 Our platform adopts proven decentralized finance (DeFi) architecture to:
-
 Guarantee the security of funds
-
 Enable composable, modular business logic for escrow, jobs, payments, and incentives
-
 Minimize risks, transaction friction, and costs associated with traditional platforms
+
+In summary, these smart contracts form a fully automated, decentralized, escrow-enabled freelance marketplace. Every job, milestone, payment, and dispute is managed by transparent and trustless smart contract code, ensuring fairness and efficiency for both freelancers and clients.
+
 
 ## 🤝 Contributing
 
